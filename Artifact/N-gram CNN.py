@@ -5,11 +5,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 plt.style.use('fivethirtyeight')
-# import nltk
-# from nltk.sentiment.vader import SentimentIntensityAnalyzer
-# Word tokenization
-# from spacy.lang.en import English
-# ****************************** READING FILE **************
+
 tweet_feb = pd.read_excel("tweet_gnew.xlsx", sheet_name='s1', header=1)
 tweet_df = pd.DataFrame(data=tweet_feb, columns=['Date', 'Tweet Text', 'Followers', 'Follows', 'Retweets', 'target'])
 tweet_df.rename(columns={"Tweet Text": "Tweet_Text"}, inplace=True)
