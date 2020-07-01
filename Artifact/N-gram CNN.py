@@ -6,9 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 plt.style.use('fivethirtyeight')
 
-#kj akjdf adkvn
-#skjdgfkj
-#afdabkj
+
 
 tweet_feb = pd.read_excel("tweet_gnew.xlsx", sheet_name='s1', header=1)
 tweet_df = pd.DataFrame(data=tweet_feb, columns=['Date', 'Tweet Text', 'Followers', 'Follows', 'Retweets', 'target'])
